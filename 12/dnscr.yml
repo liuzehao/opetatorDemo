@@ -1,0 +1,12 @@
+apiVersion: "machine.shopee.io/v1alpha1"
+kind: Unbound
+metadata:
+  name: crd-demo2
+spec:
+  clusterID: "1"
+  clusterName: "test"
+  lanIP: "127.0.0.1"
+status:
+  state: "Spare"
+
+

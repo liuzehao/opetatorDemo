@@ -1,0 +1,20 @@
+apiVersion: "machine.shopee.io/v1alpha1"
+kind: Zookeeper
+metadata:
+  name: crd-demo2
+spec:
+  clusterID: "2"
+  clusterName: "test"
+  lanIP: "10.111.5.195"
+  az: "ap-sg-1-general-x"
+  env: "test"
+  tocCluster: "shopee"
+  zookeeperVersion: "3.7.1-1"
+  zookeeperNodesNum: "3"
+  zookeeperMyid: "2"
+  clusterInfo: "eeeee"
+  productID: 3
+status:
+  state: "Spare"
+
+
