@@ -41,11 +41,4 @@ func main() {
 		}
 		return nil
 	})
-	df.Pop(func(obj interface{}) error {
-		//fmt.Printf("%T", obj)
-		for _, delta := range obj.(cache.Deltas) {
-			fmt.Println(delta.Type, ":", delta.Object.(pod).Name, delta.Object.(pod).Value)
-		}
-		return nil
-	})
 }
