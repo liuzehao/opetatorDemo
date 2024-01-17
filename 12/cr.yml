@@ -1,6 +1,8 @@
-apiVersion: "example.com/v1"
-kind: Demo
+apiVersion: v1
+kind: Pod
 metadata:
-  name: crd-demo
+  name: test-pod2
 spec:
-  name: test
+  containers:
+    - name: test-container
+      image: nginx:latest
